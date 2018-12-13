@@ -1,0 +1,413 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBCEA873-F44B-447B-B4F3-FBE57EDF6879}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FrictionTester</RootNamespace>
+    <AssemblyName>FrictionTester</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20071.324, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WinFormsUI.Docking, Version=2.0.3895.29116, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>bin\x86\Debug\WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JDGD\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JDGD\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Resources\AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Abouts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abouts.designer.cs">
+      <DependentUpon>Abouts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CRC8.cs" />
+    <Compile Include="DataReceivedEventArgs.cs" />
+    <Compile Include="ClassControl.cs" />
+    <Compile Include="DeviceControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeviceControl.designer.cs">
+      <DependentUpon>DeviceControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnumAdapter.cs" />
+    <Compile Include="FormConfigure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConfigure.Designer.cs">
+      <DependentUpon>FormConfigure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFD\FormControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFD\FormControl.designer.cs">
+      <DependentUpon>FormControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HYGD\ClassPLC.cs" />
+    <Compile Include="HYGD\FormMainHYGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HYGD\FormMainHYGD.designer.cs">
+      <DependentUpon>FormMainHYGD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HYGD\FormManualTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HYGD\FormManualTest.Designer.cs">
+      <DependentUpon>FormManualTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GdLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GdLogin.designer.cs">
+      <DependentUpon>GdLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GdMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GdMain.designer.cs">
+      <DependentUpon>GdMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GloabalData.cs" />
+    <Compile Include="FormFriction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFriction.Designer.cs">
+      <DependentUpon>FormFriction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BFD\FormMainBFD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BFD\FormMainBFD.Designer.cs">
+      <DependentUpon>FormMainBFD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormStatus.designer.cs">
+      <DependentUpon>FormStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GlobalCofigData.cs" />
+    <Compile Include="JDGD\ClassControl6024.cs" />
+    <Compile Include="JDGD\FormMainGDGD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JDGD\FormMainGDGD.designer.cs">
+      <DependentUpon>FormMainGDGD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JDGD\modbusTCP.cs" />
+    <Compile Include="mainframe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainframe.designer.cs">
+      <DependentUpon>mainframe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NetServerStart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NetServerStart.Designer.cs">
+      <DependentUpon>NetServerStart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackageUtil.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="JDGD\Form1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AboutBox1.en-US.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AboutBox1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Abouts.resx">
+      <DependentUpon>Abouts.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeviceControl.resx">
+      <DependentUpon>DeviceControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfigure.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormConfigure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFD\FormControl.resx">
+      <DependentUpon>FormControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFriction.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormFriction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BFD\FormMainBFD.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMainBFD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HYGD\FormMainHYGD.resx">
+      <DependentUpon>FormMainHYGD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HYGD\FormManualTest.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormManualTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatus.en-US.resx">
+      <DependentUpon>FormStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStatus.resx">
+      <DependentUpon>FormStatus.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GdLogin.resx">
+      <DependentUpon>GdLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GdMain.resx">
+      <DependentUpon>GdMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JDGD\FormMainGDGD.resx">
+      <DependentUpon>FormMainGDGD.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainframe.resx">
+      <DependentUpon>mainframe.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NetServerStart.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>NetServerStart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RemoteControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RemoteControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StateWiew.resx">
+      <DependentUpon>StateWiew.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StopReason.resx">
+      <DependentUpon>StopReason.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="systemconfig.resx">
+      <DependentUpon>systemconfig.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZJMC\FormMainZJMC.resx">
+      <DependentUpon>FormMainZJMC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZJMC\FormManualTestZJMC.resx">
+      <DependentUpon>FormManualTestZJMC.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZJMC\FormZJMCCtl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormZJMCCtl.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RemoteControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RemoteControl.Designer.cs">
+      <DependentUpon>RemoteControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SerialPort.cs">
+    </Compile>
+    <Compile Include="ServerUtil.cs" />
+    <Compile Include="SF_UpAndDown.cs" />
+    <Compile Include="StateWiew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StateWiew.designer.cs">
+      <DependentUpon>StateWiew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StopReason.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StopReason.designer.cs">
+      <DependentUpon>StopReason.cs</DependentUpon>
+    </Compile>
+    <Compile Include="systemconfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="systemconfig.designer.cs">
+      <DependentUpon>systemconfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ValuesViewGrid.cs" />
+    <Compile Include="ZJMC\ClassPLCzm.cs" />
+    <Compile Include="ZJMC\FormMainZJMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZJMC\FormMainZJMC.designer.cs">
+      <DependentUpon>FormMainZJMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZJMC\FormManualTestZJMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZJMC\FormManualTestZJMC.designer.cs">
+      <DependentUpon>FormManualTestZJMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZJMC\FormZJMCCtl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZJMC\FormZJMCCtl.Designer.cs">
+      <DependentUpon>FormZJMCCtl.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataOperateLib\SDAF.DataOperateLib.csproj">
+      <Project>{9F1296A7-9E88-4E7E-A1D5-531958CB52F4}</Project>
+      <Name>SDAF.DataOperateLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SDAF.NumberTextBox\SDAF.NumberTextBox.csproj">
+      <Project>{FAEF83EB-2AD3-4580-A356-45ACF1983D4C}</Project>
+      <Name>SDAF.NumberTextBox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\无标题.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\系统参考图.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\网络示意图5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fireoff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fire.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1478255759_load_upload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1478255780_load_download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1478266820_ledorange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1479890340_needle_and_thread.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1479890703_Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1479891209_Inout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1482435572_Download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1484133679_icon-41-target-arrow.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

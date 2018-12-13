@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Server>
+<ComName>COM1</ComName>
+<Baud>9600</Baud>
+<EquipName>DO0400</EquipName>
+<Addr>254</Addr>
+</Server>

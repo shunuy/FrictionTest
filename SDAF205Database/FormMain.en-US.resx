@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnFind.Text" xml:space="preserve">
+    <value>&amp;Search</value>
+  </data>
+  <data name="cmbTestType.Items" xml:space="preserve">
+    <value>Oxidizing atmosphere</value>
+  </data>
+  <data name="cmbTestType.Items1" xml:space="preserve">
+    <value>Reducing atmosphere with CO</value>
+  </data>
+  <data name="cmbTestType.Items2" xml:space="preserve">
+    <value>Reducing atmosphere with H₂</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cmbTestType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 164</value>
+  </data>
+  <data name="chkAutoNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 18</value>
+  </data>
+  <data name="chkAutoNo.Text" xml:space="preserve">
+    <value>Auto number</value>
+  </data>
+  <data name="chkManualNo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>18, 72</value>
+  </data>
+  <data name="chkManualNo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 18</value>
+  </data>
+  <data name="chkManualNo.Text" xml:space="preserve">
+    <value>Sample number</value>
+  </data>
+  <data name="chkTestType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 18</value>
+  </data>
+  <data name="chkTestType.Text" xml:space="preserve">
+    <value>Test atmosphere</value>
+  </data>
+  <data name="edtResult2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 369</value>
+  </data>
+  <data name="chkTestData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 18</value>
+  </data>
+  <data name="chkTestData.Text" xml:space="preserve">
+    <value>Test date</value>
+  </data>
+  <data name="cmbTestDate.Items3" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="edtResult1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 368</value>
+  </data>
+  <data name="cmbResult.Items3" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="cmbResult.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 369</value>
+  </data>
+  <data name="chkRestult.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 18</value>
+  </data>
+  <data name="chkRestult.Text" xml:space="preserve">
+    <value>Results range</value>
+  </data>
+  <data name="cmbResultType.Items" xml:space="preserve">
+    <value>DT</value>
+  </data>
+  <data name="cmbResultType.Items1" xml:space="preserve">
+    <value>ST</value>
+  </data>
+  <data name="cmbResultType.Items2" xml:space="preserve">
+    <value>HT</value>
+  </data>
+  <data name="cmbResultType.Items3" xml:space="preserve">
+    <value>FT</value>
+  </data>
+  <data name="cmbResultType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 332</value>
+  </data>
+  <data name="cmbResultType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 20</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>User-defined Search</value>
+  </data>
+  <data name="fg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>742, 376</value>
+  </data>
+  <data name="lblMousePosition.Location" type="System.Drawing.Point, System.Drawing">
+    <value>711, 34</value>
+  </data>
+  <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>866, 6</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="button1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="button1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="lblTemperature.Location" type="System.Drawing.Point, System.Drawing">
+    <value>829, 15</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>ST(℃):</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>HT(℃):</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>FT(℃):</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 15</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 14</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>DT(℃):</value>
+  </data>
+  <data name="lblSoftened.Location" type="System.Drawing.Point, System.Drawing">
+    <value>247, 15</value>
+  </data>
+  <data name="lblHemisphere.Location" type="System.Drawing.Point, System.Drawing">
+    <value>419, 15</value>
+  </data>
+  <data name="lblFlowsToPuddle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>591, 15</value>
+  </data>
+  <data name="lblInitialRounding.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 15</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>704, 15</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 14</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Temperature(℃):</value>
+  </data>
+  <data name="vScrollBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>867, 32</value>
+  </data>
+  <data name="picTemperature.Location" type="System.Drawing.Point, System.Drawing">
+    <value>707, 32</value>
+  </data>
+  <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>742, 245</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitHorizontal2.SplitterDistance" type="System.Int32, mscorlib">
+    <value>376</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1008, 250</value>
+  </data>
+  <data name="设置SToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="设置SToolStripMenuItem1.Text" xml:space="preserve">
+    <value>&amp;Setting</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 6</value>
+  </data>
+  <data name="打印预览ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="打印预览ToolStripMenuItem.Text" xml:space="preserve">
+    <value>Print previe&amp;w</value>
+  </data>
+  <data name="打印ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="打印ToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Print</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 6</value>
+  </data>
+  <data name="退出XToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 22</value>
+  </data>
+  <data name="退出XToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Exit</value>
+  </data>
+  <data name="文件ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="文件ToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="修改MToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="修改MToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Modify</value>
+  </data>
+  <data name="删除DToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="删除DToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>169, 6</value>
+  </data>
+  <data name="图片信息PToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="图片信息PToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Image information</value>
+  </data>
+  <data name="coordinateImageToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 22</value>
+  </data>
+  <data name="coordinateImageToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Coordinate Image</value>
+  </data>
+  <data name="编辑EToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="编辑EToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Editing</value>
+  </data>
+  <data name="所有记录AToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="所有记录AToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;All records</value>
+  </data>
+  <data name="当天记录CToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="当天记录CToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Current day record</value>
+  </data>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>181, 6</value>
+  </data>
+  <data name="自定义查找UToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>184, 22</value>
+  </data>
+  <data name="自定义查找UToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;User-defined search</value>
+  </data>
+  <data name="查找SToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 20</value>
+  </data>
+  <data name="查找SToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Search</value>
+  </data>
+  <data name="数据库ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="数据库ToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Database</value>
+  </data>
+  <data name="帮助文档ToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="帮助文档ToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="关于AToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 22</value>
+  </data>
+  <data name="关于AToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;About</value>
+  </data>
+  <data name="帮助HToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 20</value>
+  </data>
+  <data name="帮助HToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Help</value>
+  </data>
+  <data name="CurDb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 17</value>
+  </data>
+  <data name="CurDb.Text" xml:space="preserve">
+    <value>Current database:</value>
+  </data>
+  <data name="设置.Text" xml:space="preserve">
+    <value>Setting</value>
+  </data>
+  <data name="当天记录.Text" xml:space="preserve">
+    <value>Current day record</value>
+  </data>
+  <data name="所有记录.ToolTipText" xml:space="preserve">
+    <value>All data</value>
+  </data>
+  <data name="查找.Text" xml:space="preserve">
+    <value>User-defined search</value>
+  </data>
+  <data name="打印预览.Text" xml:space="preserve">
+    <value>Print preview</value>
+  </data>
+  <data name="删除.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="删除.ToolTipText" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="修改.Text" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="修改.ToolTipText" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAIAICAQAAAAAADoAgAAJgAAABAQEAAAAAAAKAEAAA4DAAAoAAAAIAAAAEAAAAABAAQAAAAAAIAC
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAAAACAAIAAgIAAAICAgADAwMAAAAD/AAD/
+        AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/+ZmZ/MzM/d3d8iIi/wAA//mZmfzMzP3d3fIiIv8AAP
+        /5mZn8zMz93d3yIiL/AAD/+ZmZ/MzM/d3d8iIi/wAA//mZmfzMzP3d3fIiIv8AAIiJmZmMzMyN3d2CIi
+        KIAAD/+ZmZ/MzM/d3d8iIi/wAA//mZmfzMzP3d3fIiIv8AAP/5mZn8zMz93d3yIiL/AAD/+ZmZ/MzM/d
+        3d8iIi/wAA//mZmfzMzP3d3fIiIv8AAIiJmZmMzMyN3d2CIiKIAAD/+ZmZ/MzM/d3d8iIi/wAA//mZmf
+        zMzP3d3fIiIv8AAP/5mZn8zMz/+P/yIiL/AAD/+ZmZ/MzM//j/8iIi/wAA//mZmfzMzP/4//IiIv8AAI
+        iIiIiMzMyIiIiCIiKIAAD///j//MzM//j/8iIi/wAA///4//zMzP/4//IiIv8AAP//+P/8zMz/+P//+P
+        //AAD///j//MzM//j///j//wAA///4//zMzP/4///4//8AAIiIiIiIiIiIiIiIiIiIAAD///j///j///
+        j///j//wAA///4///4///4///4//8AAP//+P//+P//+P//+P//AAD///j///j///j///j//w/////999
+        99//////QAAAAcAAAAHAAAABwAAAAcAAAAHAAAABQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABQAAAAcAA
+        AAHAAAABwAAAAcAAAAHAAAABQAAAAcAAAAHAAAABwAAAAcAAAAHAAAABQAAAAcAAAAHAAAABwAAAAcAA
+        AAEoAAAAEAAAACAAAAABAAQAAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAgAAAAICAAIAA
+        AACAAIAAgIAAAICAgADAwMAAAAD/AAD/AAAA//8A/wAAAP8A/wD//wAA////AAAAAAAAAAAAAAAAAAAA
+        AAAA+ZnMzd0iLwD5mczN3SIvAImZzM3dIigA+ZnMzd0iLwD5mczN3SIvAImZzM3dIigA+ZnMzd0iLwD5
+        mczPjyIvAImZzMiIIigA/4/Mz48iLwD/j8zPj/j/AIiIzMiIiIgA/4/4/4/4/wD/j/j/j/j/ttsAAAAA
+        AACAAAAAgAAAAAAAAACAAAAAgAAAAAAAAACAAAAAgAAAAAAAAACAAAAAgAAAAAAAAACAAAAAgAAAAA==
+</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>SDAF105 Database Management</value>
+  </data>
+</root>

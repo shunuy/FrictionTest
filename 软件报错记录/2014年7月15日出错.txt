@@ -1,0 +1,127 @@
+有关调用实时(JIT)调试而不是此对话框的详细信息，
+请参见此消息的结尾。
+
+************** 异常文本 **************
+System.Data.OleDb.OleDbException: 索引或主关键字不能包含一个 空 (Null) 值。
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatusErrors(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.UpdatedRowStatus(RowUpdatedEventArgs rowUpdatedEvent, BatchCommandInfo[] batchCommands, Int32 commandCount)
+   在 System.Data.Common.DbDataAdapter.Update(DataRow[] dataRows, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.UpdateFromDataTable(DataTable dataTable, DataTableMapping tableMapping)
+   在 System.Data.Common.DbDataAdapter.Update(DataTable dataTable)
+   在 FrictionTester.FormConfigure.btnOK_Click(Object sender, EventArgs e)
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+
+************** 已加载的程序集 **************
+mscorlib
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.5477 (Win7SP1GDR.050727-5400)
+    基本代码: file:///C:/Windows/Microsoft.NET/Framework/v2.0.50727/mscorlib.dll
+----------------------------------------
+FrictionTester
+    程序集版本: 1.0.0.0
+    Win32 版本: 1.0.0.0
+    基本代码: file:///C:/Program%20Files/Juncheng/ZJMCGD/FrictionTester.exe
+----------------------------------------
+System
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.5467 (Win7SP1GDR.050727-5400)
+    基本代码: file:///C:/Windows/assembly/GAC_MSIL/System/2.0.0.0__b77a5c561934e089/System.dll
+----------------------------------------
+System.Windows.Forms
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.5468 (Win7SP1GDR.050727-5400)
+    基本代码: file:///C:/Windows/assembly/GAC_MSIL/System.Windows.Forms/2.0.0.0__b77a5c561934e089/System.Windows.Forms.dll
+----------------------------------------
+System.Drawing
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.5467 (Win7SP1GDR.050727-5400)
+    基本代码: file:///C:/Windows/assembly/GAC_MSIL/System.Drawing/2.0.0.0__b03f5f7f11d50a3a/System.Drawing.dll
+----------------------------------------
+SDAF.DataOperateLib
+    程序集版本: 1.0.0.0
+    Win32 版本: 1.0.0.0
+    基本代码: file:///C:/Program%20Files/Juncheng/ZJMCGD/SDAF.DataOperateLib.DLL
+----------------------------------------
+System.Data
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.5420 (Win7SP1.050727-5400)
+    基本代码: file:///C:/Windows/assembly/GAC_32/System.Data/2.0.0.0__b77a5c561934e089/System.Data.dll
+----------------------------------------
+System.Xml
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.5476 (Win7SP1GDR.050727-5400)
+    基本代码: file:///C:/Windows/assembly/GAC_MSIL/System.Xml/2.0.0.0__b77a5c561934e089/System.Xml.dll
+----------------------------------------
+System.Configuration
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.5476 (Win7SP1GDR.050727-5400)
+    基本代码: file:///C:/Windows/assembly/GAC_MSIL/System.Configuration/2.0.0.0__b03f5f7f11d50a3a/System.Configuration.dll
+----------------------------------------
+WinFormsUI.Docking
+    程序集版本: 2.0.3895.29116
+    Win32 版本: 2.0.1.0
+    基本代码: file:///C:/Program%20Files/Juncheng/ZJMCGD/WinFormsUI.Docking.DLL
+----------------------------------------
+C1.Win.C1FlexGrid.2
+    程序集版本: 2.6.20071.324
+    Win32 版本: 2.6.20071.324
+    基本代码: file:///C:/Program%20Files/Juncheng/ZJMCGD/C1.Win.C1FlexGrid.2.DLL
+----------------------------------------
+SDAF.NumberTextBox
+    程序集版本: 1.0.0.0
+    Win32 版本: 1.0.0.0
+    基本代码: file:///C:/Program%20Files/Juncheng/ZJMCGD/SDAF.NumberTextBox.DLL
+----------------------------------------
+System.Transactions
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.5483 (Win7SP1GDR.050727-5400)
+    基本代码: file:///C:/Windows/assembly/GAC_32/System.Transactions/2.0.0.0__b77a5c561934e089/System.Transactions.dll
+----------------------------------------
+System.EnterpriseServices
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.5420 (Win7SP1.050727-5400)
+    基本代码: file:///C:/Windows/assembly/GAC_32/System.EnterpriseServices/2.0.0.0__b03f5f7f11d50a3a/System.EnterpriseServices.dll
+----------------------------------------
+mscorlib.resources
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.5477 (Win7SP1GDR.050727-5400)
+    基本代码: file:///C:/Windows/Microsoft.NET/Framework/v2.0.50727/mscorlib.dll
+----------------------------------------
+System.Data.resources
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.4927 (NetFXspW7.050727-4900)
+    基本代码: file:///C:/Windows/assembly/GAC_MSIL/System.Data.resources/2.0.0.0_zh-CHS_b77a5c561934e089/System.Data.resources.dll
+----------------------------------------
+System.Windows.Forms.resources
+    程序集版本: 2.0.0.0
+    Win32 版本: 2.0.50727.5420 (Win7SP1.050727-5400)
+    基本代码: file:///C:/Windows/assembly/GAC_MSIL/System.Windows.Forms.resources/2.0.0.0_zh-CHS_b77a5c561934e089/System.Windows.Forms.resources.dll
+----------------------------------------
+
+************** JIT 调试 **************
+要启用实时(JIT)调试，
+该应用程序或计算机的 .config 文件(machine.config)的 system.windows.forms 节中必须设置
+jitDebugging 值。
+编译应用程序时还必须启用
+调试。
+
+例如: 
+
+<configuration>
+    <system.windows.forms jitDebugging="true" />
+</configuration>
+
+启用 JIT 调试后，任何无法处理的异常
+都将被发送到在此计算机上注册的 JIT 调试器，
+而不是由此对话框处理。
+

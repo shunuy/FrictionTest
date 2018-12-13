@@ -1,0 +1,392 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B78D1CF5-E43B-4A32-A3D9-93121D12FF04}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SDAF.DataBase</RootNamespace>
+    <AssemblyName>SDAF.DataBase</AssemblyName>
+    <ApplicationIcon>GRAPH07.ICO</ApplicationIcon>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\FrictionTester\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\BitmapProcess\release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>..\FrictionTester\bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>..\FrictionTester\bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C1.C1Pdf.2, Version=2.1.20071.59, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.C1Preview.2, Version=2.0.20071.41114, Culture=neutral, PublicKeyToken=594a0605db190bb9, processorArchitecture=MSIL" />
+    <Reference Include="C1.C1PrintDocument.Classic.2, Version=2.0.20071.401, Culture=neutral, PublicKeyToken=1a6f4158ebe6d3b8" />
+    <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20071.324, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Input.2, Version=2.0.20071.32002, Culture=neutral, PublicKeyToken=7e7ff60f0c214f9a, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Preview.2, Version=2.0.20071.41114, Culture=neutral, PublicKeyToken=41780e2fc605e636, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1PrintPreview.Classic.2, Version=2.0.20071.401, Culture=neutral, PublicKeyToken=3af768410ba0a64f, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassMain.cs" />
+    <Compile Include="Data\Configure.cs" />
+    <Compile Include="Data\FormPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data\FormPassword.designer.cs">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPDF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPDF.Designer.cs">
+      <DependentUpon>FormPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPreview.Designer.cs">
+      <DependentUpon>FormPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReportTip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReportTip.Designer.cs">
+      <DependentUpon>FormReportTip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSet.Designer.cs">
+      <DependentUpon>FormSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.en-US.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\FormPassword.en-US.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data\FormPassword.resx">
+      <DependentUpon>FormPassword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.en-US.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPDF.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPreview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReportTip.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormReportTip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSet.en-US.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSet.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FormSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.en-US.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\修改.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\22.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\arrow_left_green_48.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\arrow_right_green_48.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\business.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\data_process.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\ICO-2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\ICO-229.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\ICO-1736.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\ICO-1739.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\ICO-1943.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\ICO-2265.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\ICO-2722.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\ICO-2723.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\ktimer1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\ktimer.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\next.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\report.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\system-config-services.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\查找.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\窗口-1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\窗口.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\窗口-剪.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\窗口-压.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\打印预览.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\当天记录.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\删除.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\设置.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\设置.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\所有记录.Image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\Standard\window_new.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\Standard\document-new.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\Standard\filesave-1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\Standard\filesave.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\Standard\folder_new.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\Standard\folder_open.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\Standard\Open.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\Standard\Save.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\Standard\system-help.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\ICO-86.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\打印预览.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\修改.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\删除.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="图标\system-help.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GRAPH07.ICO" />
+    <None Include="Resources\帮助.Image.png" />
+    <None Include="Resources\删除.Image.png" />
+    <None Include="Resources\设置.Image.png" />
+    <None Include="Resources\查找.png" />
+    <None Include="Resources\所有记录.png" />
+    <None Include="Resources\当天记录.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataOperateLib\SDAF.DataOperateLib.csproj">
+      <Project>{9F1296A7-9E88-4E7E-A1D5-531958CB52F4}</Project>
+      <Name>SDAF.DataOperateLib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SDAF.NumberTextBox\SDAF.NumberTextBox.csproj">
+      <Project>{FAEF83EB-2AD3-4580-A356-45ACF1983D4C}</Project>
+      <Name>SDAF.NumberTextBox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="FOXITREADERLib">
+      <Guid>{3A8BD65E-9922-4162-A649-83F2D5326BBE}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>
