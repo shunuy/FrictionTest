@@ -40,7 +40,7 @@ namespace FrictionTester
         
 
 
-        string Ver = "V1.24ZY";
+        string Ver = "V1.25";
         
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox1));
         public AboutBox1()

@@ -42,7 +42,7 @@ namespace FrictionTester
 
       
 
-        ClassControl6024 control6024;
+        ClassControl6024old control6024;
         private void FormMain_Load(object sender, EventArgs e)
         {
             
@@ -58,7 +58,7 @@ namespace FrictionTester
 
             GlobalData.frmStatus = new FormStatus();
             GlobalCofigData.SystemConfig.AutoOffFireDelayTime = 15;
-            tmrAutoStopFire.Interval = GlobalCofigData.SystemConfig.AutoOffFireDelayTime * 1000;
+            tmrAutoStopFire.Interval = GlobalCofigData.SystemConfig.AutoOffFireDelayTime * 100;
             GlobalData.frmStatus.WriteLogImmediately(Properties.Resources.LogStartUp);
 
             GlobalData.SystemStatusChanged += new SystemStatusChangedEventHandler(GlobalData_SystemStatusChanged);
@@ -80,7 +80,7 @@ namespace FrictionTester
             int aHeight = Screen.PrimaryScreen.Bounds.Height;
             this.Size = new System.Drawing.Size(aWidth, aHeight);
 
-            control6024 = new ClassControl6024();
+            control6024 = new ClassControl6024old();
             control6024.Connect();
         }
 
@@ -576,7 +576,7 @@ namespace FrictionTester
             FormConfigure frmConfigure = new FormConfigure();
             frmConfigure.Owner = this;
             frmConfigure.ShowDialog();
-            tmrAutoStopFire.Interval = GlobalCofigData.SystemConfig.AutoOffFireDelayTime * 1000;
+            tmrAutoStopFire.Interval = GlobalCofigData.SystemConfig.AutoOffFireDelayTime * 100;
         }
 
 
