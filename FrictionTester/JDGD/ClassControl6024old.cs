@@ -18,13 +18,15 @@ namespace FrictionTester
         public ClassControl6024old()
         {
             adamModbus = new AdamSocket();
-            bool isOpened=adamModbus.Connect(AdamType.Adam6000, "10.0.0.1", ProtocolType.Tcp);
-
-            if (isOpened == false)
+            // bool isOpened=adamModbus.Connect(AdamType.Adam6000, "10.0.0.1", ProtocolType.Tcp);
+            bool isOpened = adamModbus.Connect("10.0.0.1", ProtocolType.Tcp, 502);
+                if (isOpened == false)
             {
                 GlobalData.SystemStatus = SystemStatuses.NotConnected;
               
             }
+                else
+                GlobalData.SystemStatus = SystemStatuses.SystemReady;
         }
 
         public void StartESD()

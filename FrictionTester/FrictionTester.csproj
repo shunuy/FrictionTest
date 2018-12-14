@@ -52,15 +52,15 @@
   <ItemGroup>
     <Reference Include="Advantech.Adam, Version=7.2.17.0, Culture=neutral, PublicKeyToken=3fd900e8195c8feb">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\x86\Debug\Advantech.Adam.dll</HintPath>
+      <HintPath>bin\Debug\Advantech.Adam.dll</HintPath>
     </Reference>
     <Reference Include="Advantech.Common, Version=7.2.17.0, Culture=neutral, PublicKeyToken=3fd900e8195c8feb">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\x86\Debug\Advantech.Common.dll</HintPath>
+      <HintPath>bin\Debug\Advantech.Common.dll</HintPath>
     </Reference>
     <Reference Include="Advantech.Protocol, Version=7.2.17.0, Culture=neutral, PublicKeyToken=3fd900e8195c8feb">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\x86\Debug\Advantech.Protocol.dll</HintPath>
+      <HintPath>bin\Debug\Advantech.Protocol.dll</HintPath>
     </Reference>
     <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20071.324, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -72,7 +72,7 @@
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="WinFormsUI.Docking, Version=2.0.3895.29116, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>bin\x86\Debug\WinFormsUI.Docking.dll</HintPath>
+      <HintPath>..\..\通用软件\FrictionTester\FrictionTester\bin\x86\Debug\WinFormsUI.Docking.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

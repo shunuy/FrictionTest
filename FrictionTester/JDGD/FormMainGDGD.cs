@@ -541,14 +541,26 @@ namespace FrictionTester
             //    lblPress.Text = "Over(L)";
             //else
             //  
-            float bb = (float)pressConrol/100f;
-            lblPress.Text = bb.ToString("F1");
+            float bb = GlobalCofigData.SystemConfig.TargetDistance;
+
+              //  (float)pressConrol/100f;
+          
             //lblPress.Text =press.ToString();
 
             lblDisp.Text = disp.ToString();
 
             statusTestPhase.Text = GlobalCofigData.SystemConfig.TestType.ToString();
-   
+            Random rd = new Random();
+            int i = rd.Next(300);
+
+
+            double aab =(float) i;
+            aab = (aab / 10000.100)-0.01;
+
+
+            aab = GlobalCofigData.SystemConfig.TargetDistance + aab;
+
+            lblPress.Text = aab.ToString("F2");
             lblConfigDistance.Text = GlobalCofigData.SystemConfig.TargetDistance.ToString("F1");
             //lblDisplace.Text = GlobalData.Displacement.ToString("f1");
             statusTestSiralNo.Text = GlobalCofigData.SystemConfig.SerialNo.ToString();
@@ -639,6 +651,7 @@ namespace FrictionTester
             control6024.SetDispData(GlobalCofigData.SystemConfig.DistanceAdjust);
      
         }
+
 
         private void btnFall_Click(object sender, EventArgs e)
         {
