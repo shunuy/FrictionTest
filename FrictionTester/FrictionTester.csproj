@@ -50,18 +50,6 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Advantech.Adam, Version=7.2.17.0, Culture=neutral, PublicKeyToken=3fd900e8195c8feb">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\x86\Debug\Advantech.Adam.dll</HintPath>
-    </Reference>
-    <Reference Include="Advantech.Common, Version=7.2.17.0, Culture=neutral, PublicKeyToken=3fd900e8195c8feb">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\x86\Debug\Advantech.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="Advantech.Protocol, Version=7.2.17.0, Culture=neutral, PublicKeyToken=3fd900e8195c8feb">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\x86\Debug\Advantech.Protocol.dll</HintPath>
-    </Reference>
     <Reference Include="C1.Win.C1FlexGrid.2, Version=2.6.20071.324, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -76,10 +64,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="JDGD\Adam6024.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="JDGD\ClassControl6024old.cs" />
     <Compile Include="JDGD\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,7 +172,6 @@
     <Compile Include="PackageUtil.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="JDGD\Adam6024.resx" />
     <EmbeddedResource Include="JDGD\Form1.resx">
       <SubType>Designer</SubType>
       <DependentUpon>Form1.cs</DependentUpon>
