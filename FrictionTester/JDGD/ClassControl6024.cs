@@ -54,6 +54,38 @@ namespace FrictionTester
             MBmaster.WriteSingleCoils(5,1,40,false);
         }
 
+
+
+        bool add, minus;
+        public void zeroAdd()
+        { 
+
+            if (add)
+            {
+                MBmaster.WriteSingleCoils(5, 1, 75, true);
+                add = false;
+            }
+            else
+            {
+                MBmaster.WriteSingleCoils(5, 1, 75, false);
+                  add = true;
+            }
+        }
+        public void zerominus()
+        {
+
+            if (minus)
+            {
+                MBmaster.WriteSingleCoils(5, 1, 74, true);
+                minus = false;
+            }
+            else
+            {
+                MBmaster.WriteSingleCoils(5, 1, 74, false);
+                minus = true;
+            }
+        }
+
         public void Rise()
         {
 
@@ -84,7 +116,7 @@ namespace FrictionTester
 
         public int ReadPessData()
         {
-            if (GlobalData.SystemStatus != SystemStatuses.NotConnected)    MBmaster.ReadHoldingRegister(3, 1, 1, 4);
+            if (GlobalData.SystemStatus != SystemStatuses.NotConnected)    MBmaster.ReadHoldingRegister(3, 1, 1, 5);
             return testData;
         }
         public int ReadDispData()
@@ -104,12 +136,18 @@ namespace FrictionTester
 
             return pressControl;
         }
+        public int Read_MF68()
+        {
+
+            return zeroData_MF68;
+        }
 
         public void 
             SetData(float voltage)
         {
 
-            int press =(int) (voltage * 100);
+            //int press =(int) (voltage * 100);
+            int press = (int)(voltage * 30);
             if (press > 5000) press = 5000;
             byte[] data=new byte[2];
             data[0] =(byte) (press/256);
@@ -131,6 +169,7 @@ namespace FrictionTester
         }
 
         private int testData;
+        private int zeroData_MF68;
         private int dispData;
         private int pressControl;
         private byte[] data;
@@ -177,8 +216,13 @@ namespace FrictionTester
                         testData = data[6] * 256 + data[7];
                     }
 
-                   
-               
+                    if (data.Length > 9)//µçÑ¹·´À¡Öµ
+                    {
+                        zeroData_MF68 = data[8] * 256 + data[9];
+                    }
+
+
+
                     break;
                 case 4:
                     message = "Read input register";

@@ -37,10 +37,11 @@ namespace FrictionTester
        //1.23LZ 在泸州调整火焰感度可以处理负数，高度取消+10 
         //1.24ZY(专用版) 从四川泸州拖回来的老火焰进行改造（原来是用364位传感器，有电路板采集位移。为了以后软件管理维护，改造后采用上海精浦的绝对是拉绳编码器。由上位机直接读位移）
         //这台设备，只有两个串口,二为485接口
+        //1.25 醴陵静电专业版 
         
 
 
-        string Ver = "V1.24ZY";
+        string Ver = "V1.25醴陵";
         
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox1));
         public AboutBox1()

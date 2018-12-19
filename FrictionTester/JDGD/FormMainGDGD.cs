@@ -531,6 +531,8 @@ namespace FrictionTester
             int aa = control6024.ReadDispSetData();
             lblDisplaySet.Text = aa.ToString();
 
+            label14.Text = control6024.Read_MF68().ToString();
+
             //if (i_iStatus== 0)
             //{
             //    lblPress.Text = GlobalData.FireDistance.ToString("F2");
@@ -542,7 +544,7 @@ namespace FrictionTester
             //else
             //  
             float bb = (float)pressConrol/100f;
-            lblPress.Text = bb.ToString("F1");
+            lblPress.Text = GlobalCofigData.SystemConfig.TargetDistance.ToString("F1");
             //lblPress.Text =press.ToString();
 
             lblDisp.Text = disp.ToString();
