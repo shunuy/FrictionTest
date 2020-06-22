@@ -32,8 +32,7 @@ namespace FrictionTester
 
         private void SystemAbouts_Click(object sender, EventArgs e)
         {
-            Abouts mydlg = new Abouts();
-            mydlg.ShowDialog();
+   
         }
 
 

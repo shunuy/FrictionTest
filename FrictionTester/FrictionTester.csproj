@@ -92,12 +92,6 @@
     <Compile Include="Resources\AboutBox1.Designer.cs">
       <DependentUpon>AboutBox1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Abouts.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Abouts.designer.cs">
-      <DependentUpon>Abouts.cs</DependentUpon>
-    </Compile>
     <Compile Include="CRC8.cs" />
     <Compile Include="DataReceivedEventArgs.cs" />
     <Compile Include="ClassControl.cs" />
@@ -200,10 +194,6 @@
     <EmbeddedResource Include="Resources\AboutBox1.resx">
       <SubType>Designer</SubType>
       <DependentUpon>AboutBox1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Abouts.resx">
-      <DependentUpon>Abouts.cs</DependentUpon>
-      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="DeviceControl.resx">
       <DependentUpon>DeviceControl.cs</DependentUpon>

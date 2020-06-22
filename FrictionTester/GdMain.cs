@@ -79,8 +79,7 @@ namespace FrictionTester
 
         private void NetAbouts_Click(object sender, EventArgs e)
         {
-            Abouts mydlg = new Abouts();
-            mydlg.Show();
+          
         }
    }
 }
