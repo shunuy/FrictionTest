@@ -55,6 +55,11 @@ namespace FrictionTester
                 cmbCapacity.Text=( GlobalCofigData.SystemConfig).Capacity;
 
             }
+            else if (SDAF.DataOperateLib.DataOperate.EquipMentType == SDAF.DataOperateLib.EquipMentTypes.ZJMC)
+            {
+                lblPrepareH0.Text = "高度设置";
+                lblH0.Text = "压力设置";
+            }
 
             List<EnumValueStringPair> list4 = new List<EnumValueStringPair>();
 
