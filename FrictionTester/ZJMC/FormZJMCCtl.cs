@@ -66,5 +66,15 @@ namespace FrictionTester.ZJMC
         {
             frmParent.plcZM.Release();
         }
+
+        private void BtnLoad_Click(object sender, EventArgs e)
+        {
+            frmParent.plcZM.ManualXichui();
+        }
+
+        private void BtnManualoFangchui_Click(object sender, EventArgs e)
+        {
+            frmParent.plcZM.ManualFangchui();
+        }
     }
 }

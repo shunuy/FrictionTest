@@ -125,6 +125,18 @@ MW8      上位机加压压力显示值(精确度:0.01T)*/
             MBmaster.WriteSingleCoils(5, 1, 30, true);
         }
 
+        public void ManualXichui()
+        {
+
+            MBmaster.WriteSingleCoils(5, 1, 10, true);
+        }
+
+        public void ManualFangchui()
+        {
+
+            MBmaster.WriteSingleCoils(5, 1, 11, true);
+        }
+
         public void Install()
         {
 
