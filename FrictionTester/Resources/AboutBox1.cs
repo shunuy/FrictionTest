@@ -38,11 +38,12 @@ namespace FrictionTester
         //1.24ZY(专用版) 从四川泸州拖回来的老火焰进行改造（原来是用364位传感器，有电路板采集位移。为了以后软件管理维护，改造后采用上海精浦的绝对是拉绳编码器。由上位机直接读位移）
         //这台设备，只有两个串口,二为485接口
         //V1.25 第一版静电配套软件，使用6024模块。使操作电极的几个按钮隐藏。2018.12.14发往安监局技术中心。
-        //V1.30 完善撞击摩擦一体机（2020.06.22给仓库库存调试好提供给湖南兵器集团）    
+        //V1.30 完善撞击摩擦一体机（2020.06.22给仓库库存调试好提供给湖南兵器集团）   
+        //V1.31 下位机没有上传放锤完成从而自动触发停止。显示停止按钮。
         
 
 
-        string Ver = "V1.30";
+        string Ver = "V1.31";
         
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox1));
         public AboutBox1()

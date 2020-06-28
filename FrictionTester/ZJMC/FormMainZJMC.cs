@@ -415,6 +415,8 @@ namespace FrictionTester
                 GlobalData.timeStartTest = DateTime.Now;
                 frmDebugInfo.StartTest();
                 GlobalData.SystemStatus = SystemStatuses.BeTesting;
+               
+                
             }
         }
 
@@ -835,6 +837,7 @@ namespace FrictionTester
         private void btnReset_Click(object sender, EventArgs e)
         {
             plcZM.Reset();
+            GlobalData.SystemStatus = SystemStatuses.SystemReady;
         }
 
         private void button1_Click(object sender, EventArgs e)
