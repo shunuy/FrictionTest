@@ -173,7 +173,7 @@ namespace FrictionTester
 
         private void Global_TestTypeChanged(object sender, EventArgs e)
         {
-            if (GlobalCofigData.SystemConfig.TestType == TestTypes.正式试验)
+            if (GlobalCofigData.SystemConfig.TestType == TestTypes.撞击感度)
             {
                     
             }

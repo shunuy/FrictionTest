@@ -882,7 +882,7 @@
             this.statusTestPhase.Name = "statusTestPhase";
             this.statusTestPhase.Size = new System.Drawing.Size(134, 55);
             this.statusTestPhase.TabIndex = 7;
-            this.statusTestPhase.Text = "预备试验";
+            this.statusTestPhase.Text = "摩擦感度";
             this.statusTestPhase.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // statusTestSiralNo

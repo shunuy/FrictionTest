@@ -12,8 +12,8 @@ namespace FrictionTester
 {
     public partial class FormConfigure : Form
     {
-       private static readonly EnumValueStringPair m_PreparePhase = new EnumValueStringPair(TestTypes.预备试验);
-        private static readonly EnumValueStringPair m_MainPhase = new EnumValueStringPair(TestTypes.正式试验 );
+       private static readonly EnumValueStringPair m_PreparePhase = new EnumValueStringPair(TestTypes.摩擦感度);
+        private static readonly EnumValueStringPair m_MainPhase = new EnumValueStringPair(TestTypes.撞击感度 );
        
 
 
@@ -36,7 +36,7 @@ namespace FrictionTester
                 label4.Text = "标准值kV:";
                 label5.Text = "实测值kV:";
                 lblH0.Text = "初始电压H0(kV)";
-                lblPrepareH0.Text = "预备试验H0(kV)";
+                lblPrepareH0.Text = "摩擦感度H0(kV)";
                 //edtMaxFireDistance.Visible = false;
                 lblHeight.Text = "点火间隙(um):";
                 //AutoFireFallDelayTime.Visible = true;
@@ -132,17 +132,7 @@ namespace FrictionTester
            //}
 
 
-           //V1.14CS
-           if (GlobalCofigData.SystemConfig.TestType == TestTypes.预备试验)
-           {
-               if (GlobalCofigData.SystemConfig.SerialNo == 1)
-                   GlobalCofigData.SystemConfig.TargetDistance = GlobalCofigData.SystemConfig.PrepareH0;
-           }
-           else
-           {
-               if (GlobalCofigData.SystemConfig.SerialNo == 1)
-                   GlobalCofigData.SystemConfig.TargetDistance = GlobalCofigData.SystemConfig.H0;
-           }
+         
 
 
            if (SDAF.DataOperateLib.DataOperate.EquipMentType == SDAF.DataOperateLib.EquipMentTypes.JDGD)

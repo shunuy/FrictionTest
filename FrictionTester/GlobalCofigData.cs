@@ -8,8 +8,8 @@ namespace FrictionTester
 {
     public enum TestTypes
     {
-        预备试验,
-        正式试验
+        摩擦感度,
+        撞击感度
     }
 
     public enum ControlTypes

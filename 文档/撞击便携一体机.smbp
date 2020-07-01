@@ -2,8 +2,8 @@
 <ProjectDescriptor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectVersion>1.7.0.0</ProjectVersion>
   <ManagementLevel>FunctLevelMan6_0</ManagementLevel>
-  <Name>便携式一体机（2020年6月24日上载）</Name>
-  <FullName>C:\Users\Zhouhaijun\Desktop\便携式一体机（2020年6月24日上载）.smbp</FullName>
+  <Name>便携式一体机（2020年6月29日修改)</Name>
+  <FullName>C:\Users\Zhouhaijun\Desktop\便携式一体机（2020年6月29日修改).smbp</FullName>
   <SoftwareConfiguration>
     <Pous>
       <ProgramOrganizationUnits>
@@ -3178,6 +3178,13 @@
                 <Descriptor />
                 <Row>5</Row>
                 <Column>0</Column>
+                <ChosenConnection>Up, Down, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>VerticalLine</ElementType>
+                <Descriptor />
+                <Row>6</Row>
+                <Column>0</Column>
                 <ChosenConnection>Up, Right</ChosenConnection>
               </LadderEntity>
               <LadderEntity>
@@ -3218,6 +3225,13 @@
               <LadderEntity>
                 <ElementType>Line</ElementType>
                 <Descriptor />
+                <Row>6</Row>
+                <Column>1</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Descriptor />
                 <Row>0</Row>
                 <Column>2</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
@@ -3252,7 +3266,7 @@
               </LadderEntity>
               <LadderEntity>
                 <ElementType>Comparison</ElementType>
-                <ComparisonExpression>%MF17 &gt; 4.9</ComparisonExpression>
+                <ComparisonExpression>%MF17 &gt; 0.5</ComparisonExpression>
                 <Row>5</Row>
                 <Column>1</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
@@ -3260,6 +3274,13 @@
               <LadderEntity>
                 <ElementType>Line</ElementType>
                 <Descriptor />
+                <Row>6</Row>
+                <Column>2</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Descriptor />
                 <Row>0</Row>
                 <Column>3</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
@@ -3302,6 +3323,13 @@
               <LadderEntity>
                 <ElementType>Line</ElementType>
                 <Descriptor />
+                <Row>6</Row>
+                <Column>3</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Descriptor />
                 <Row>0</Row>
                 <Column>4</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
@@ -3344,6 +3372,13 @@
               <LadderEntity>
                 <ElementType>Line</ElementType>
                 <Descriptor />
+                <Row>6</Row>
+                <Column>4</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Descriptor />
                 <Row>0</Row>
                 <Column>5</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
@@ -3386,6 +3421,13 @@
               <LadderEntity>
                 <ElementType>Line</ElementType>
                 <Descriptor />
+                <Row>6</Row>
+                <Column>5</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Descriptor />
                 <Row>0</Row>
                 <Column>6</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
@@ -3428,6 +3470,13 @@
               <LadderEntity>
                 <ElementType>Line</ElementType>
                 <Descriptor />
+                <Row>6</Row>
+                <Column>6</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Descriptor />
                 <Row>0</Row>
                 <Column>7</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
@@ -3464,6 +3513,13 @@
                 <ElementType>Line</ElementType>
                 <Descriptor />
                 <Row>5</Row>
+                <Column>7</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Descriptor />
+                <Row>6</Row>
                 <Column>7</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
               </LadderEntity>
@@ -3506,6 +3562,13 @@
                 <ElementType>Line</ElementType>
                 <Descriptor />
                 <Row>5</Row>
+                <Column>8</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
+              <LadderEntity>
+                <ElementType>Line</ElementType>
+                <Descriptor />
+                <Row>6</Row>
                 <Column>8</Column>
                 <ChosenConnection>Left, Right</ChosenConnection>
               </LadderEntity>
@@ -3559,6 +3622,13 @@
                 <Column>10</Column>
                 <ChosenConnection>Left</ChosenConnection>
               </LadderEntity>
+              <LadderEntity>
+                <ElementType>Operation</ElementType>
+                <OperationExpression>%MW8 := REAL_TO_INT(%MF12)</OperationExpression>
+                <Row>6</Row>
+                <Column>9</Column>
+                <ChosenConnection>Left, Right</ChosenConnection>
+              </LadderEntity>
             </LadderElements>
             <InstructionLines>
               <InstructionLineEntity>
@@ -3606,15 +3676,23 @@
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>MPP</InstructionLine>
+                <InstructionLine>MRD</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
-                <InstructionLine>AND [ %MF17 &gt; 4.9 ]</InstructionLine>
+                <InstructionLine>AND [ %MF17 &gt; 0.5 ]</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
               <InstructionLineEntity>
                 <InstructionLine>ST    %M27</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>MPP</InstructionLine>
+                <Comment />
+              </InstructionLineEntity>
+              <InstructionLineEntity>
+                <InstructionLine>[ %MW8 := REAL_TO_INT ( %MF12 ) ]</InstructionLine>
                 <Comment />
               </InstructionLineEntity>
             </InstructionLines>
@@ -9232,7 +9310,7 @@
         </Axis>
         <Distance Type="SchneiderElectric.Automation.SoMachineBasic.Entities.PLCObjects.FunctionBlocks.FbParameterElementRangeType`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], SchneiderElectric.SoMachineBasic.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5beddbc0114a5f07">
           <Value>
-            <int>1500</int>
+            <int>10000</int>
           </Value>
         </Distance>
         <Velocity Type="SchneiderElectric.Automation.SoMachineBasic.Entities.PLCObjects.FunctionBlocks.FbParameterElementRangeType`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], SchneiderElectric.SoMachineBasic.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5beddbc0114a5f07">
@@ -9271,7 +9349,7 @@
         </Axis>
         <Distance Type="SchneiderElectric.Automation.SoMachineBasic.Entities.PLCObjects.FunctionBlocks.FbParameterElementRangeType`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], SchneiderElectric.SoMachineBasic.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5beddbc0114a5f07">
           <Value>
-            <int>-1500</int>
+            <int>-4000</int>
           </Value>
         </Distance>
         <Velocity Type="SchneiderElectric.Automation.SoMachineBasic.Entities.PLCObjects.FunctionBlocks.FbParameterElementRangeType`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], SchneiderElectric.SoMachineBasic.Entities, Version=1.0.0.0, Culture=neutral, PublicKeyToken=5beddbc0114a5f07">
@@ -9714,66 +9792,77 @@
             <Type>None</Type>
             <Next>Done</Next>
             <Delay>0</Delay>
+            <Event />
           </MotionStep>
           <MotionStep>
             <Step>7</Step>
             <Type>None</Type>
             <Next>Done</Next>
             <Delay>0</Delay>
+            <Event />
           </MotionStep>
           <MotionStep>
             <Step>8</Step>
             <Type>None</Type>
             <Next>Done</Next>
             <Delay>0</Delay>
+            <Event />
           </MotionStep>
           <MotionStep>
             <Step>9</Step>
             <Type>None</Type>
             <Next>Done</Next>
             <Delay>0</Delay>
+            <Event />
           </MotionStep>
           <MotionStep>
             <Step>10</Step>
             <Type>None</Type>
             <Next>Done</Next>
             <Delay>0</Delay>
+            <Event />
           </MotionStep>
           <MotionStep>
             <Step>11</Step>
             <Type>None</Type>
             <Next>Done</Next>
             <Delay>0</Delay>
+            <Event />
           </MotionStep>
           <MotionStep>
             <Step>12</Step>
             <Type>None</Type>
             <Next>Done</Next>
             <Delay>0</Delay>
+            <Event />
           </MotionStep>
           <MotionStep>
             <Step>13</Step>
             <Type>None</Type>
             <Next>Done</Next>
             <Delay>0</Delay>
+            <Event />
           </MotionStep>
           <MotionStep>
             <Step>14</Step>
             <Type>None</Type>
             <Next>Done</Next>
             <Delay>0</Delay>
+            <Event />
           </MotionStep>
           <MotionStep>
             <Step>15</Step>
             <Type>None</Type>
             <Next>Done</Next>
             <Delay>0</Delay>
+            <Event />
           </MotionStep>
           <MotionStep>
             <Step>16</Step>
             <Type>None</Type>
             <Next>Done</Next>
             <Delay>0</Delay>
+            <Event />
           </MotionStep>
         </MotionSteps>
         <ProbeEventWindowOnly>false</ProbeEventWindowOnly>
@@ -9794,8 +9883,8 @@
       <AutoSaveRamOnEeprom>true</AutoSaveRamOnEeprom>
       <WatchdogPeriod>250</WatchdogPeriod>
     </CpuBehavior>
-    <InstListBufferSize>19504</InstListBufferSize>
-    <ProgramBufferSize>156016</ProgramBufferSize>
+    <InstListBufferSize>19502</InstListBufferSize>
+    <ProgramBufferSize>156001</ProgramBufferSize>
     <TraceTimeBase>Time5Sec</TraceTimeBase>
   </SoftwareConfiguration>
   <HardwareConfiguration>

@@ -100,6 +100,14 @@ namespace FrictionTester
             plcZM = new ClassPLCzm();
             plcZM.Connect();
             plcZM.SetManualAutoMode(true);
+
+            if (GlobalCofigData.SystemConfig.TestType == TestTypes.摩擦感度)
+            {
+                plcZM.SetHitOrFrictionMode(true);
+            }
+            else
+                plcZM.SetHitOrFrictionMode(false);
+
         }
 
 
@@ -120,7 +128,7 @@ namespace FrictionTester
 
         private void Global_TestTypeChanged(object sender, EventArgs e)
         {
-            if (GlobalCofigData.SystemConfig.TestType == TestTypes.正式试验)
+            if (GlobalCofigData.SystemConfig.TestType == TestTypes.撞击感度)
             {
                     
             }
@@ -600,7 +608,13 @@ namespace FrictionTester
             frmConfigure.ShowDialog();
             plcZM.SetDispData(GlobalCofigData.SystemConfig.PrepareH0);
             plcZM.SetPressData(GlobalCofigData.SystemConfig.H0);
-          
+            if(GlobalCofigData.SystemConfig.TestType==TestTypes.摩擦感度)
+            {
+                plcZM.SetHitOrFrictionMode(true);
+            }
+            else
+                plcZM.SetHitOrFrictionMode(false);
+
         }
 
 
@@ -650,7 +664,7 @@ namespace FrictionTester
             plcZM.Install();
 
             GlobalData.SystemStatus = SystemStatuses.Preparing;
-            //if (GlobalCofigData.SystemConfig.TestType == TestTypes.预备试验 )
+            //if (GlobalCofigData.SystemConfig.TestType == TestTypes.摩擦感度 )
             //{
                 //if (GlobalCofigData.SystemConfig.SerialNo == 1)
                  //   GlobalCofigData.SystemConfig.TargetDistance = GlobalCofigData.SystemConfig.PrepareH0;

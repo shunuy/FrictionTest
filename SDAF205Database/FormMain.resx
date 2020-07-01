@@ -184,10 +184,10 @@
     <value>True</value>
   </data>
   <data name="cmbTestType.Items" xml:space="preserve">
-    <value>预备试验</value>
+    <value>摩擦感度</value>
   </data>
   <data name="cmbTestType.Items1" xml:space="preserve">
-    <value>正式试验</value>
+    <value>撞击感度</value>
   </data>
   <data name="cmbTestType.Location" type="System.Drawing.Point, System.Drawing">
     <value>136, 365</value>

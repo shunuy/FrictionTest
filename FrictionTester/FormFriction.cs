@@ -41,7 +41,7 @@ namespace FrictionTester
             if (c1FlexGrid1.Cols[e.Col].Name == "实验结果")
             {
 
-                if (GlobalCofigData.SystemConfig.TestType == TestTypes.预备试验)
+                if (GlobalCofigData.SystemConfig.TestType == TestTypes.摩擦感度)
                 {
 
                     GlobalCofigData.SystemConfig.TargetDistance = GlobalCofigData.SystemConfig.PrepareH0;
@@ -133,7 +133,7 @@ namespace FrictionTester
             //if (c1FlexGrid1.Cols[e.Col].Name == "实验结果")
             //{
 
-            //    if (GlobalCofigData.SystemConfig.TestType == TestTypes.预备试验)
+            //    if (GlobalCofigData.SystemConfig.TestType == TestTypes.摩擦感度)
             //    {
                  
             //            GlobalCofigData.SystemConfig.TargetDistance = GlobalCofigData.SystemConfig.PrepareH0;
@@ -173,7 +173,7 @@ namespace FrictionTester
             if (SDAF.DataOperateLib.DataOperate.EquipMentType == SDAF.DataOperateLib.EquipMentTypes.BFD) DataOperate.MyTable.Rows[GlobalData.DataRowIndex][DataOperate.初始高度] = GlobalData.targetTemperature; 
             else
             {
-                    if (GlobalCofigData.SystemConfig.TestType == TestTypes.预备试验)
+                    if (GlobalCofigData.SystemConfig.TestType == TestTypes.摩擦感度)
                     {
                         DataOperate.MyTable.Rows[GlobalData.DataRowIndex][DataOperate.初始高度] = GlobalCofigData.SystemConfig.PrepareH0;
                     }

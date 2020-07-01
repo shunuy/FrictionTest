@@ -40,10 +40,13 @@ namespace FrictionTester
         //V1.25 第一版静电配套软件，使用6024模块。使操作电极的几个按钮隐藏。2018.12.14发往安监局技术中心。
         //V1.30 完善撞击摩擦一体机（2020.06.22给仓库库存调试好提供给湖南兵器集团）   
         //V1.31 下位机没有上传放锤完成从而自动触发停止。显示停止按钮。
-        
+        //V1.32 区分了撞击和摩擦。其他仪器不能再用此软件了。2020.06.30 在醴陵给副省长演示了产品。
+        //演示成功了，但是仪器是有问题的。 预压判断受力根本来不及就卡死了，根本做不了摩擦试验。下位机程序逻辑还有些问题待解决。
+          
 
 
-        string Ver = "V1.31";
+
+        string Ver = "V1.32";
         
         System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AboutBox1));
         public AboutBox1()

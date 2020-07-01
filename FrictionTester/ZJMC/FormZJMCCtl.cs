@@ -76,5 +76,10 @@ namespace FrictionTester.ZJMC
         {
             frmParent.plcZM.ManualFangchui();
         }
+
+        private void Button10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

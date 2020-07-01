@@ -92,7 +92,7 @@ namespace FrictionTester
 
         private void Global_TestTypeChanged(object sender, EventArgs e)
         {
-            if (GlobalCofigData.SystemConfig.TestType == TestTypes.正式试验)
+            if (GlobalCofigData.SystemConfig.TestType == TestTypes.撞击感度)
             {
                     
             }
@@ -381,7 +381,7 @@ namespace FrictionTester
             if (dlg.selectindex == 0)
             {
 
-                if (GlobalCofigData.SystemConfig.TestType == TestTypes.正式试验)
+                if (GlobalCofigData.SystemConfig.TestType == TestTypes.撞击感度)
                 {
                     GlobalCofigData.SystemConfig.TargetDistance = GlobalCofigData.SystemConfig.TargetDistance - GlobalCofigData.SystemConfig.Step;//V1.19
                 }
@@ -410,7 +410,7 @@ namespace FrictionTester
             {
 
 
-                if (GlobalCofigData.SystemConfig.TestType == TestTypes.正式试验)
+                if (GlobalCofigData.SystemConfig.TestType == TestTypes.撞击感度)
                 {
 
                     GlobalCofigData.SystemConfig.TargetDistance = GlobalCofigData.SystemConfig.TargetDistance + GlobalCofigData.SystemConfig.Step;//V1.19
@@ -443,11 +443,11 @@ namespace FrictionTester
 
             if (dlg.selectindex == 3)
             {
-                if (GlobalCofigData.SystemConfig.TestType == TestTypes.预备试验)
+                if (GlobalCofigData.SystemConfig.TestType == TestTypes.摩擦感度)
                 {
                     //DataOperate.MyTable.Rows[GlobalData.DataRowIndex]["实验结果"] = "预置实验结束";
                     System.Windows.Forms.MessageBox.Show("预置测试已经结束！", "操作提示");
-                    GlobalCofigData.SystemConfig.TestType = TestTypes.正式试验;
+                    GlobalCofigData.SystemConfig.TestType = TestTypes.撞击感度;
                     NewTestData();
                 }
                 else
@@ -636,7 +636,7 @@ namespace FrictionTester
         private void menuPrepare_Click(object sender, EventArgs e)
         {
 
-            if (GlobalCofigData.SystemConfig.TestType == TestTypes.预备试验)
+            if (GlobalCofigData.SystemConfig.TestType == TestTypes.摩擦感度)
             {
                 if (GlobalCofigData.SystemConfig.SerialNo == 1)
                     GlobalCofigData.SystemConfig.TargetDistance = GlobalCofigData.SystemConfig.PrepareH0;
